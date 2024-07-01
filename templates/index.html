@@ -2,215 +2,258 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Landing Page - Start Bootstrap Theme</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="{% static 'css/favicon.ico' %}" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Absolute</a>
-                
-            </div>
-        </nav>
-        <!-- Slider start from here-->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Landing Page - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{% static 'css/favicon.ico' %}"/>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+          type="text/css"/>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+          type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet"/>
 
-<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="{% get_media_prefix %}img/ZEISS Axio.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="{% get_media_prefix %}img/факометр-lensmeter.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="{% get_media_prefix %}img/schott-obsh_2.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Предыдущий</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Следующий</span>
-  </button>
+
+</head>
+<body>
+<!-- Navigation-->
+<!-- Logo -->
+<div style="position: absolute; top: 10px; left: 10px;">
+    <a href="/"> <!-- Hedef sayfa URL'sini buraya ekleyin -->
+        <img src="{% get_media_prefix %}img/logo_transparent.png" alt="Logo">
+    </a>
 </div>
-         <!-- Slider finish here-->
-        <div style="margin-top: 150px;"></div> <!-- Boşluk ekleyin -->
+<div style="margin-top: 75px;"></div> <!-- Boşluk ekleyin -->
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary" style="margin-left: 30px;">
+    <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+                data-mdb-collapse-init
+                class="navbar-toggler"
+                type="button"
+                data-mdb-target="#navbarCenteredExample"
+                aria-controls="navbarCenteredExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarCenteredExample"
+        >
+            <!-- Centered links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about_us/">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Contact/">Contact</a>
+                </li>
+
+
+            </ul>
+            <!-- Centered links -->
+        </div>
+        <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+
+<!-- Slider start from here-->
+
+
+<!-- Slider finish here-->
+<div style="margin-top: 80px;"></div> <!-- Boşluk ekleyin -->
 <div class="container" style="display: flex; justify-content: center;">
-  <div class="card" style="width: 18rem; margin: 0 10px 10px 0;">
-    <img src="{% get_media_prefix %}img/Trimble 3d scanning total station_1.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Trimble 3D scanning total station offers precise, efficient, and versatile solutions for advanced spatial data capture.</p>
+    <div class="card" style="width: 18rem; margin: 0 10px 10px 0;">
+        <div class="image-container">
+            <a href="/Measurement_optical_equipment"> <!-- Hedef sayfa URL'sini buraya ekleyin -->
+                <img src="{% get_media_prefix %}img/Trimble 3d scanning total station_1.jpg" class="card-img-top"
+                     alt="Trimble 3D Scanning Total Station">
+            </a>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+            <h5 class="card-title">Measurement optical equipments</h5>
+            <div style="margin-top: 5px;"></div> <!-- Boşluk ekleyin    -->Trimble 3D scanning total station offers
+            precise, efficient, and versatile solutions for advanced spatial data capture.</p>
+        </div>
     </div>
-  </div>
-  <div class="card" style="width: 18rem; margin: 0 10px 10px 0;">
-    <img src="{% get_media_prefix %}img/Nd-YAG_Crystal_1.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">"Nd-YAG Crystal is a robust material widely used in laser technology for its excellent optical properties and high efficiency in various applications.</p>
+    <div class="card" style="width: 18rem; margin: 0 10px 10px 0;">
+        <div class="image-container ">
+            <a href="/crystal"> <!-- Hedef sayfa URL'sini buraya ekleyin -->
+                <div style="margin-top: 65px;"></div> <!-- Boşluk ekleyin    -->
+                <img src="{% get_media_prefix %}img/yag.png" class="card-img-top" alt="...">
+            </a>
+        </div>
+        <div style="margin-top: 50px;"></div> <!-- Boşluk ekleyin    -->
+        <div class="card-body">
+            <p class="card-text">
+            <h5 class="card-title">Crystals</h5>
+            <div style="margin-top: 20px;"></div> <!-- Boşluk ekleyin    --> "Nd-YAG Crystal is a robust material
+            widely used in laser technology for its excellent optical properties and high efficiency in various
+            applications.</p>
+        </div>
     </div>
-  </div>
-  <div class="card" style="width: 18rem; margin: 0 10px 10px 0;">
-    <img src="{% get_media_prefix %}img/ZEISS Spectrometer.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text"> Cutting-edge device for precise analysis of light, enabling detailed insights into materials and molecular structures with unparalleled accuracy.</p>
+    <div class="card" style="width: 18rem; margin: 0 10px 10px 0;">
+        <div class="image-container">
+            <a href="/optical_instruments"> <!-- Hedef sayfa URL'sini buraya ekleyin -->
+                <div style="margin-top: 40px;"></div> <!-- Boşluk ekleyin    -->
+                <img src="{% get_media_prefix %}img/ZEISS Spectrometer.jpg" class="card-img-top" alt="...">
+            </a>
+        </div>
+        <div style="margin-top: 50px;"></div> <!-- Boşluk ekleyin    -->
+        <div class="card-body">
+            <p class="card-text">
+            <h5 class="card-title">Optical Instruments</h5>
+            <div style="margin-top: 20px;"></div> <!-- Boşluk ekleyin --> Cutting-edge device for precise analysis of
+            light, enabling detailed insights into materials and molecular structures with unparalleled accuracy.</p>
+        </div>
     </div>
-  </div>
-  <div class="card" style="width: 18rem; margin: 0 10px 10px 0;">
-    <img src="{% get_media_prefix %}img/High Homogeneity Glass.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">High Homogeneity Glass is renowned for its uniform composition, making it ideal for precision optics and scientific instruments requiring exceptional clarity and consistency.</p>
+    <div class="card" style="width: 18rem; margin: 0 10px 10px 0;">
+        <div class="image-container">
+            <a href="/Optical_Glasses"> <!-- Hedef sayfa URL'sini buraya ekleyin -->
+                <div style="margin-top: 100px;"></div> <!-- Boşluk ekleyin    -->
+                <img src="{% get_media_prefix %}img/optik-cam.png" class="card-img-top" alt="...">
+            </a>
+        </div>
+        <div style="margin-top: 100px;"></div> <!-- Boşluk ekleyin    -->
+        <div class="card-body">
+            <p class="card-text">
+            <h5 class="card-title">Optical Glasses</h5>
+            <div style="margin-top: 20px;"></div> <!-- Boşluk ekleyin -->High Homogeneity Glass is renowned for its
+            uniform composition, making it ideal for precision optics and scientific instruments requiring exceptional
+            clarity and consistency.</p>
+        </div>
     </div>
-  </div>
 </div>
 
-
-
-        <!-- Image Showcases-->
-        <section class="showcase">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                   <div class="col-lg-6 order-lg-2 text-white">
-    <img src="../media/img/ZEISS Axio.jpg" class="img-fluid" alt="...">
-</div>
-
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Optical Instruments</h2>
-                        <p class="lead mb-0">
-Optical instruments such as the Axio microscope, lensmeter, and spectrometer offer precise measurements and analysis. They enable detailed examination of samples, accurate determination of lens parameters, and precise analysis of light spectra. These instruments aid in various fields like microscopy, optometry, and spectroscopy, facilitating research, quality control, and diagnostics with their high precision and reliability.</p>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white">
-    <img src="../media/img/Leica%203d%20disto.jpg" class="img-fluid" alt="...">
-</div>
-
-                    <div class="col-lg-6 my-auto showcase-text">
-                        <h2>Measurement optical equipment</h2>
-                        <p class="lead mb-0">Leica 3D Disto is a cutting-edge measurement optical equipment, enabling precise and efficient data capture for diverse applications in construction, architecture, and interior design.</p>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white">
-    <img src="../media/img/123-shot.png" class="img-fluid" alt="...">
-</div>
-
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Optical Glasses</h2>
-                        <p class="lead mb-0">Optical glasses are renowned for their precision and clarity. Engineered with meticulous craftsmanship, they offer exceptional light transmission properties and minimal distortion, crucial for various applications like high-performance lenses, scientific instruments, and astronomical telescopes. With a legacy of innovation spanning centuries, Schott glasses epitomize quality and reliability in optical technology.
-
-
-
-
-
-</p>
-                    </div>
-                </div>
-                 </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white">
-    <img src="../media/img/Nd-YAG1.png" class="img-fluid" alt="...">
-</div>
-<div style="margin-top: 20px;"></div> <!-- Boşluk ekleyin -->
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Crystals</h2>
-                        <p class="lead mb-0">Nd-YAG and ErYAG crystals are vital in laser technology. Nd-YAG produces high-energy beams used in industrial cutting and medical procedures, while ErYAG is prized for its precise surgical applications in dermatology and ophthalmology. Both crystals exhibit exceptional optical properties, making them indispensable in modern laser systems.
-
-
-
-
-
-</p>
-                    </div>
-                </div>
-
-        </section>
-
-        <!-- Call to Action-->
-        <section class="call-to-action text-white text-center" id="signup">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <h2 class="mb-4">Absolute Precision in Optical Solutions</h2>
-                        <!-- Signup form-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    <p>To activate this form, sign up at</p>
-                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-
-                    </div>
-                </div>
+<div style="margin-top: 110px;"></div> <!-- Boşluk ekleyin -->
+<!-- Image Showcases-->
+<section class="showcase">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white">
+                <img src="../media/img/ZEISS Axio.jpg" class="img-fluid" alt="...">
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
-                        <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="#">About</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#">Contact</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#">Terms of Use</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                        </ul>
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2023. All Rights Reserved.</p>
-                    </div>
-                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item me-4">
-                                <a href="#"><i class="bi-facebook fs-3"></i></a>
-                            </li>
-                            <li class="list-inline-item me-4">
-                                <a href="#"><i class="bi-twitter fs-3"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="bi-instagram fs-3"></i></a>
-                            </li>
-                        </ul>
+
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Optical Instruments</h2>
+                <p class="lead mb-0">
+                    Optical instruments such as the Axio microscope, lensmeter, and spectrometer offer precise
+                    measurements and analysis. They enable detailed examination of samples, accurate determination of
+                    lens parameters, and precise analysis of light spectra. These instruments aid in various fields like
+                    microscopy, optometry, and spectroscopy, facilitating research, quality control, and diagnostics
+                    with their high precision and reliability.</p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white">
+                <img src="../media/img/Leica%203d%20disto.jpg" class="img-fluid" alt="...">
+            </div>
+
+            <div class="col-lg-6 my-auto showcase-text">
+                <h2>Measurement optical equipment</h2>
+                <p class="lead mb-0">Leica 3D Disto is a cutting-edge measurement optical equipment, enabling precise
+                    and efficient data capture for diverse applications in construction, architecture, and interior
+                    design.</p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white">
+                <img src="../media/img/123-shot.png" class="img-fluid" alt="...">
+            </div>
+
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Optical Glasses</h2>
+                <p class="lead mb-0">Optical glasses are renowned for their precision and clarity. Engineered with
+                    meticulous craftsmanship, they offer exceptional light transmission properties and minimal
+                    distortion, crucial for various applications like high-performance lenses, scientific instruments,
+                    and astronomical telescopes. With a legacy of innovation spanning centuries, Schott glasses
+                    epitomize quality and reliability in optical technology.
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row g-0">
+        <div class="col-lg-6 order-lg-2 text-white">
+            <img src="../media/img/Nd-YAG1.png" class="img-fluid" alt="...">
+        </div>
+        <div style="margin-top: 20px;"></div> <!-- Boşluk ekleyin -->
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Crystals</h2>
+            <p class="lead mb-0">Nd-YAG and ErYAG crystals are vital in laser technology. Nd-YAG produces high-energy
+                beams used in industrial cutting and medical procedures, while ErYAG is prized for its precise surgical
+                applications in dermatology and ophthalmology. Both crystals exhibit exceptional optical properties,
+                making them indispensable in modern laser systems.
+
+
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Call to Action-->
+<section class="call-to-action text-white text-center" id="signup">
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <h2 class="mb-4">Absconstruction Precision in Optics, Trust in Service</h2>
+                <!-- Signup form-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        <p>To activate this form, sign up at</p>
+                        <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                     </div>
                 </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="{% static 'js/scripts.js'%}"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="{% static 'js/scripts.js' %}"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
 </html>
