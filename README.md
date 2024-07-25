@@ -16,12 +16,12 @@
 
 1. Клонируйте репозиторий:
     ```bash
-    git clone https://github.com/username/repository-name.git
+    git clone https://github.com/username//django-ecommerce.git
     ```
 
 2. Перейдите в директорию проекта:
     ```bash
-    cd repository-name
+    cd django-ecommerce
     ```
 
 3. Создайте виртуальную среду и активируйте её:
